@@ -1,5 +1,6 @@
 import React from 'react';
 import { Mail, Phone, MapPin, Send, Github, Linkedin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   return (
@@ -23,10 +24,10 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-white font-bold mb-4 uppercase tracking-wider text-sm">Sahifalar</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors text-sm">Bosh sahifa</a></li>
-              <li><a href="#solution" className="text-gray-400 hover:text-cyan-400 transition-colors text-sm">Yechimlar</a></li>
-              <li><a href="#team" className="text-gray-400 hover:text-cyan-400 transition-colors text-sm">Jamoa</a></li>
-              <li><a href="#/demo" className="text-gray-400 hover:text-cyan-400 transition-colors text-sm">Demo</a></li>
+              <li><Link to="/" className="text-gray-400 hover:text-cyan-400 transition-colors text-sm">Bosh sahifa</Link></li>
+              <li><a href="/#solution" className="text-gray-400 hover:text-cyan-400 transition-colors text-sm">Yechimlar</a></li>
+              <li><a href="/#team" className="text-gray-400 hover:text-cyan-400 transition-colors text-sm">Jamoa</a></li>
+              <li><Link to="/demo" className="text-gray-400 hover:text-cyan-400 transition-colors text-sm">Demo</Link></li>
             </ul>
           </div>
 
