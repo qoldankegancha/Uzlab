@@ -4,6 +4,7 @@ import LandingPage from './pages/LandingPage';
 import DemoPage from './pages/DemoPage';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import AIChatbot from './components/AIChatbot';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -31,6 +32,7 @@ const App: React.FC = () => {
             <Route path="/demo" element={<DemoPage />} />
           </Routes>
         </main>
+        <AIChatbot />
         <Footer />
       </div>
     </Router>

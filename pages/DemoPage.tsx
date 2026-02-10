@@ -10,7 +10,7 @@ const DemoPage: React.FC = () => {
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Video Player Section */}
+        {/* Requirement 6.1: Demo Video */}
         <div className="mb-12">
           <div className="relative w-full aspect-video bg-black rounded-2xl overflow-hidden shadow-[0_0_40px_rgba(34,211,238,0.2)] border border-gray-800">
             {/* Placeholder for actual video */}
@@ -20,7 +20,7 @@ const DemoPage: React.FC = () => {
                     <Play className="w-8 h-8 text-white ml-1" fill="white" />
                  </div>
                  <p className="text-gray-400">MVP Video Namoyishi</p>
-                 <p className="text-xs text-gray-600 mt-2">(YouTube havola joylanadi)</p>
+                 <p className="text-xs text-gray-600 mt-2">(YouTube havola joylanadi: 1-5 daqiqa)</p>
                </div>
             </div>
           </div>
@@ -37,7 +37,7 @@ const DemoPage: React.FC = () => {
         {/* Content Blocks */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           
-          {/* Section 1 */}
+          {/* Requirement 6.2: Description */}
           <div className="glass-panel p-8 rounded-2xl border-l-4 border-l-cyan-500">
             <h2 className="text-2xl font-bold text-white mb-4">Videoda nima ko‘rsatilgan?</h2>
             <p className="text-gray-300 leading-relaxed text-sm">
@@ -60,7 +60,7 @@ const DemoPage: React.FC = () => {
             </p>
           </div>
 
-          {/* Section 3 */}
+          {/* Section 3: Tech Stack */}
           <div className="glass-panel p-8 rounded-2xl border-l-4 border-l-green-500 md:col-span-2">
             <h2 className="text-2xl font-bold text-white mb-6">Ishlatilgan Texnologiyalar (Stack) va AI</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -86,7 +86,7 @@ const DemoPage: React.FC = () => {
             </div>
           </div>
 
-          {/* Section 4 */}
+          {/* Requirement 6.3: Link to Prototype */}
           <div className="glass-panel p-8 rounded-2xl border-l-4 border-l-orange-500 md:col-span-2 flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
                 <h2 className="text-2xl font-bold text-white mb-2">Loyiha Holati</h2>
@@ -102,7 +102,7 @@ const DemoPage: React.FC = () => {
                  </a>
                  <a href="#" className="flex items-center gap-2 px-6 py-3 bg-cyan-600 hover:bg-cyan-500 rounded-lg transition-all text-white font-bold shadow-[0_0_15px_rgba(34,211,238,0.4)]">
                     <Globe className="w-5 h-5" />
-                    Live Demo
+                    Prototipni Sinab Ko'rish
                  </a>
             </div>
           </div>

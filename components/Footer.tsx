@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, MapPin, Send, Github, Linkedin } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Github, Linkedin, Code } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
@@ -27,7 +27,8 @@ const Footer: React.FC = () => {
               <li><Link to="/" className="text-gray-400 hover:text-cyan-400 transition-colors text-sm">Bosh sahifa</Link></li>
               <li><a href="/#solution" className="text-gray-400 hover:text-cyan-400 transition-colors text-sm">Yechimlar</a></li>
               <li><a href="/#team" className="text-gray-400 hover:text-cyan-400 transition-colors text-sm">Jamoa</a></li>
-              <li><Link to="/demo" className="text-gray-400 hover:text-cyan-400 transition-colors text-sm">Demo</Link></li>
+              <li><Link to="/demo" className="text-gray-400 hover:text-cyan-400 transition-colors text-sm">Demo & Prototip</Link></li>
+              <li><a href="#" className="text-gray-500 hover:text-white transition-colors text-xs flex items-center gap-1 mt-2"><Code className="w-3 h-3" /> API Access</a></li>
             </ul>
           </div>
 
