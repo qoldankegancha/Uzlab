@@ -520,7 +520,7 @@ const LandingPage: React.FC = () => {
               <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center group-hover:scale-110 transition-transform duration-500">
                       <div className="w-24 h-24 bg-cyan-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
-                        <Video className="w-10 h-10 text-white" />
+                        <Video className="w-10 h-10 text-white" src="https://youtu.be/UHZx4yuRtUg" />
                       </div>
                       <span className="text-gray-400 text-lg font-mono">Video Yuklanmoqda... (YouTube Link)</span>
                   </div>
