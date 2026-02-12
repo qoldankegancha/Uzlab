@@ -13,16 +13,15 @@ const DemoPage: React.FC = () => {
         {/* Requirement 6.1: Demo Video */}
         <div className="mb-12">
           <div className="relative w-full aspect-video bg-black rounded-2xl overflow-hidden shadow-[0_0_40px_rgba(34,211,238,0.2)] border border-gray-800">
-            {/* Placeholder for actual video */}
-            <div className="absolute inset-0 flex items-center justify-center bg-slate-900">
-               <div className="text-center">
-                 <div className="w-20 h-20 bg-cyan-600 rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse">
-                    <Play className="w-8 h-8 text-white ml-1" fill="white" />
-                 </div>
-                 <p className="text-gray-400">MVP Video Namoyishi</p>
-                 <p className="text-xs text-gray-600 mt-2">(YouTube havola joylanadi: 1-5 daqiqa)</p>
-               </div>
-            </div>
+             <iframe 
+                width="100%" 
+                height="100%" 
+                src="https://www.youtube.com/embed/UHZx4yuRtUg" 
+                title="UzLab MVP Demo" 
+                frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowFullScreen
+              ></iframe>
           </div>
         </div>
 

@@ -33,7 +33,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell } from 'recharts';
 
 // --- HELPERS ---
-const RevealOnScroll = ({ children, className = "" }: { children: React.ReactNode, className?: string }) => {
+const RevealOnScroll = ({ children, className = "" }: { children?: React.ReactNode, className?: string }) => {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -516,15 +516,16 @@ const LandingPage: React.FC = () => {
               Gapirish oson. Biz buni ko'rsatamiz. UzLab hozirning o'zida ishlaydigan prototip.
             </p>
             
-            <div className="relative w-full aspect-video rounded-3xl overflow-hidden border border-gray-800 shadow-[0_0_100px_rgba(34,211,238,0.15)] group cursor-pointer bg-slate-900 hover:border-cyan-500 transition-all duration-500">
-              <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center group-hover:scale-110 transition-transform duration-500">
-                      <div className="w-24 h-24 bg-cyan-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
-                        <Video className="w-10 h-10 text-white" src="https://youtu.be/UHZx4yuRtUg" />
-                      </div>
-                      <span className="text-gray-400 text-lg font-mono">Video Yuklanmoqda... (YouTube Link)</span>
-                  </div>
-              </div>
+            <div className="relative w-full aspect-video rounded-3xl overflow-hidden border border-gray-800 shadow-[0_0_100px_rgba(34,211,238,0.15)] bg-slate-900 hover:border-cyan-500 transition-all duration-500">
+              <iframe 
+                width="100%" 
+                height="100%" 
+                src="https://www.youtube.com/embed/UHZx4yuRtUg" 
+                title="UzLab MVP Demo" 
+                frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowFullScreen
+              ></iframe>
             </div>
             
             <div className="mt-16">
